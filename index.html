@@ -4,14 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Exprire</title>
-		<link rel="stylesheet" href="./css/main.css" />
+		<meta name="keywords" content="portfolio,theme,bootstrap" />
+		<meta name="description" content="An HTML portfolio theme built" />
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+		<title>Expire</title>
 		<link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+		<script src="./js/parallax.min.js"></script>
+		<script src="./js/mixitup.min.js"></script>
+		<link rel="stylesheet" href="./css/main.css" />
+		<script defer src="./js/main.js"></script>
 	</head>
 	<body>
 		<header>
 			<nav>
-				<h1 class="logo"><a href="./index.html">Expire logo</a></h1>
+				<h1>
+					<a href="./index.html" class="logo">Expire</a>
+					<a href="./index.html">Expire</a>
+				</h1>
 				<ul class="main-left-menu">
 					<li><a href="">HOME</a></li>
 					<li><a href="">PORTFOLIO</a></li>
@@ -24,8 +37,647 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="main_slider"></section>
-		<main class="page"></main>
+		<section class="main_slider">
+			<div class="container slider_wrapper">
+				<ul class="slides">
+					<li>
+						<h2 class="jumbo_tt">Expire</h2>
+						<div class="title_bar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p>Professionaly designed, carefully made for your enjoyement</p>
+						<p>
+							<a href="" class="btn">EXPLORE</a>
+							<a href="" class="btn">LEARN MORE</a>
+						</p>
+					</li>
+					<li>
+						<h2 class="jumbo_tt">Standard</h2>
+						<div class="title_bar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p>Flowing without any loss of kinetic energy</p>
+						<p>
+							<a href="" class="btn">EXPLORE</a>
+							<a href="" class="btn">LEARN MORE</a>
+						</p>
+					</li>
+					<li>
+						<h2 class="jumbo_tt">Projectiles</h2>
+						<div class="title_bar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p>
+							Incredible as this seems to our ordinary ideas, it is an
+							understatement
+						</p>
+						<p>
+							<a href="" class="btn">EXPLORE</a>
+							<a href="" class="btn">LEARN MORE</a>
+						</p>
+					</li>
+				</ul>
+				<p class="controls">
+					<span class="prev">prev</span>
+					<span class="next">next</span>
+				</p>
+			</div>
+			<p class="pager"></p>
+		</section>
+		<main class="page">
+			<section class="About_us_section frame">
+				<div class="container">
+					<h2 class="content_tt left">About Us</h2>
+					<p class="content_desc left">
+						This is who we are - or at least who we strive to be...
+					</p>
+					<div class="row">
+						<div class="col-md-3 feature">
+							<p>
+								If you can't explain it simply, you don't understand it well
+								enough.
+							</p>
+							<a href="" class="btn primary_bg"
+								>THE MORE YOU KNOW <span>&rarr;</span></a
+							>
+						</div>
+						<div class="col-md-3">
+							<div class="feature_item">
+								<div class="ribbon"><span class="box"></span></div>
+								<h3>
+									<span class="sprite typo">typo icon</span
+									><span>Typography</span>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Officiis at, voluptatem similique tempora voluptate quia in ea
+									minima earum consequatur eveniet, praesentium illum error
+									delectus optio nobis eaque distinctio! Sequi tenetur vero
+									repellat quas quia quam voluptas ducimus suscipit nostrum?
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature_item">
+								<div class="ribbon"><span class="box"></span></div>
+								<h3>
+									<span class="sprite full_icon">full icon</span
+									><span>FULL ICON SET</span>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Officiis at, voluptatem similique tempora voluptate quia in ea
+									minima earum consequatur eveniet, praesentium illum error
+									delectus optio nobis eaque distinctio! Sequi tenetur vero
+									repellat quas quia quam voluptas ducimus suscipit nostrum?
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature_item">
+								<div class="ribbon"><span class="box"></span></div>
+								<h3>
+									<span class="sprite accurate">accurate icon</span
+									><span>ACCURATE</span>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Officiis at, voluptatem similique tempora voluptate quia in ea
+									minima earum consequatur eveniet, praesentium illum error
+									delectus optio nobis eaque distinctio! Sequi tenetur vero
+									repellat quas quia quam voluptas ducimus suscipit nostrum?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="Parallax_section frame inside"
+				data-parallax="scroll"
+				data-image-src="./images/paralax_bg.jpg"
+			>
+				<div class="container">
+					<h2 class="content_tt center">Parallax section</h2>
+					<p class="content_desc center">
+						Exploring the unexplored is a risky business, but a rewarding one.
+					</p>
+					<blockquote>
+						<p>
+							Design is in everything we make, but it's also between those
+							things. It's a mix of craft, science, storytelling, propaganda,
+							and philosophy.
+						</p>
+						<small>— Erik Adigard</small>
+					</blockquote>
+				</div>
+			</section>
+			<section class="Stats_excerpt_section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 item">
+							<span class="stat_icon sprite user">user icon</span>
+							<div class="item_info">
+								<span class="count" data-number="1000">1000</span>
+								<i>+</i>
+								<h3>Happy users</h3>
+							</div>
+						</div>
+						<div class="col-md-3 item">
+							<span class="stat_icon sprite cart">user cart</span>
+							<div class="item_info">
+								<span class="count" data-number="200">200</span>
+								<h3>Sold products</h3>
+							</div>
+						</div>
+						<div class="col-md-3 item">
+							<span class="stat_icon sprite comment">user comment </span>
+							<div class="item_info">
+								<span class="count" data-number="56332">5632</span>
+								<h3>Comments</h3>
+							</div>
+						</div>
+						<div class="col-md-3 item">
+							<span class="stat_icon sprite file">user file</span>
+							<div class="item_info">
+								<span class="count" data-number="25000">25000</span>
+								<i>+</i>
+								<h3>Lines of code</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="latest_blog_section container">
+				<h2 class="content_tt center">Latest Blog Posts</h2>
+				<p class="content_desc center narrow">
+					Information is a source of learning. But unless it is organized,
+					processed, and available to the right people in a format for decision
+					making, it is a burden, not a benefit.
+				</p>
+				<div class="latest_blog_wrap">
+					<ul class="latest_blog_list">
+						<li class="col-md-4">
+							<div class="content">
+								<header class="post_img frame inside">
+									<img src="./images/blog_post_img1.jpg" alt="blog post img1" />
+								</header>
+								<div class="post_info">
+									<div class="post_info_header">
+										<h3>Just Another Blog Post</h3>
+									<hr />
+									<div class="post_info_meta">
+										<i class="sprite small-user"></i>
+										<span>By Author</span>
+										<i class="sprite small-calendar"></i>
+										<span>9 November 2022</span>
+										<i class="sprite small-comment"></i>
+										<span>3</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Officiis at, voluptatem similique tempora voluptate quia in
+										ea minima earum consequatur eveniet, praesentium illum error
+										delectus optio.
+									</p>
+									</div>
+									<a href="#" class="btn inverse">read more</a>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-4">
+							<div class="content">
+								<header class="post_img frame inside">
+									<img src="./images/blog_post_img2.jpg" alt="blog post img2" />
+								</header>
+								<div class="post_info">
+									<div class="post_info_header">
+										<h3>Blog Post With Youtube video</h3>
+									<hr />
+									<div class="post_info_meta">
+										<i class="sprite small-user"></i>
+										<span>By Author</span>
+										<i class="sprite small-calendar"></i>
+										<span>29 December 2022</span>
+										<i class="sprite small-comment"></i>
+										<span>3</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Officiis at, voluptatem similique tempora voluptate quia in
+										ea minima earum consequatur eveniet, praesentium illum error
+										delectus optio nobis eaque distinctio! Suscipit nostrum?
+									</p>
+									</div>
+									<a href="#" class="btn inverse">read more</a>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-4">
+							<div class="content">
+								<header class="post_img frame inside">
+									<img src="./images/blog_post_img3.jpg" alt="blog post img3" />
+								</header>
+								<div class="post_info">
+									<div class="post_info_header">
+										<h3>This Could be Great</h3>
+									<hr />
+									<div class="post_info_meta">
+										<i class="sprite small-user"></i>
+										<span>By Author</span>
+										<i class="sprite small-calendar"></i>
+										<span>10 June 2022</span>
+										<i class="sprite small-comment"></i>
+										<span>3</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Officiis at, voluptatem similique tempora voluptate quia in
+										ea minima earum consequatur eveniet, praesentium illum error
+										delectus optio nobis eaque distinctio! Suscipit nostrum?
+									</p>
+									</div>
+									<a href="#" class="btn inverse">read more</a>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-4">
+							<div class="content">
+								<header class="post_img frame inside">
+									<img src="./images/blog_post_img4.jpg" alt="blog post img1" />
+								</header>
+								<div class="post_info">
+									<div class="post_info_header">
+											<h3>Just Another Blog Post</h3>
+									<hr />
+									<div class="post_info_meta">
+										<i class="sprite small-user"></i>
+										<span>By Author</span>
+										<i class="sprite small-calendar"></i>
+										<span>9 November 2022</span>
+										<i class="sprite small-comment"></i>
+										<span>3</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Officiis at, voluptatem similique tempora voluptate quia in
+										ea minima earum consequatur eveniet, praesentium illum error
+										delectus optio.
+									</div>
+									</p>
+									<a href="#" class="btn inverse">read more</a>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-4">
+							<div class="content">
+								<header class="post_img frame inside">
+									<img src="./images/blog_post_img5.jpg" alt="blog post img2" />
+								</header>
+								<div class="post_info">
+									<div class="post_info_header">
+										<h3>Blog Post With Youtube video</h3>
+									<hr />
+									<div class="post_info_meta">
+										<i class="sprite small-user"></i>
+										<span>By Author</span>
+										<i class="sprite small-calendar"></i>
+										<span>29 December 2022</span>
+										<i class="sprite small-comment"></i>
+										<span>3</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Officiis at, voluptatem similique tempora voluptate quia in
+										ea minima earum consequatur eveniet, praesentium illum error
+										delectus optio nobis eaque distinctio! Suscipit nostrum?
+									</p>
+									</div>
+									<a href="#" class="btn inverse">read more</a>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-4">
+							<div class="content">
+								<header class="post_img frame inside">
+									<img src="./images/blog_post_img6.jpg" alt="blog post img3" />
+								</header>
+								<div class="post_info">
+									<div class="post_info_header">
+										<h3>This Could be Great</h3>
+									<hr />
+									<div class="post_info_meta">
+										<i class="sprite small-user"></i>
+										<span>By Author</span>
+										<i class="sprite small-calendar"></i>
+										<span>10 June 2022</span>
+										<i class="sprite small-comment"></i>
+										<span>3</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Officiis at, voluptatem similique tempora voluptate quia in
+										ea minima earum consequatur eveniet, praesentium illum error
+										delectus optio nobis eaque distinctio! Suscipit nostrum?
+									</p>
+									</div>
+									<a href="#" class="btn inverse">read more</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<p class="controls">
+						<span class="prev sprite">prev</span>
+						<span class="next sprite">next</span>
+					</p>
+				</div>
+			</section>
+			<section class="Portfolio_section frame">
+				<h2 class="content_tt center">Latest portfolio</h2>
+				<p class="sorting">
+					<span class="btn inverse active" data-filter="all">All</span>
+					<span class="btn inverse" data-filter=".web">Web</span>
+					<span class="btn inverse" data-filter=".mobile">Mobile</span>
+					<span class="btn inverse" data-filter=".illustration">Illustration</span>
+					<span class="btn inverse" data-filter=".print">Print</span>
+				</p>
+				<ul class="portfolio_section_list">
+					<li class="mix web">
+						<img src="./images/portfolio_01.jpg" alt="portfolio img1"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix mobile">
+						<img src="./images/portfolio_02.jpg" alt="portfolio img2"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix illustration">
+						<img src="./images/portfolio_03.jpg" alt="portfolio img3"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix web">
+						<img src="./images/portfolio_04.jpg" alt="portfolio img4"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix mobile">
+						<img src="./images/portfolio_05.jpg" alt="portfolio img5"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix print">
+						<img src="./images/portfolio_06.jpg" alt="portfolio img6"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix mobile">
+						<img src="./images/portfolio_07.jpg" alt="portfolio img7"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mix web">
+						<img src="./images/portfolio_08.jpg" alt="portfolio img8"/>
+						<div class="hover_contents">
+							<h3>Big city</h3>
+							<p class="tags">Art, Photography, City</p>
+							<div class="frame outside">
+								<p>
+									<a href="#" class="sprite link">portfolio_01</a>
+									<span class="sprite zoom">zoom in</span>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<p class="viewmore">
+					<a href="#" class="btn inverse">view more</a>
+				</p>
+			</section>
+			<section class="Our_partners">
+				<div class="container">
+					<ul class="partner_list">
+						<li><a href="#"><img src="./images/Partner_1.jpg" alt="partner img 1"/></a></li>
+						<li><a href="#"><img src="./images/Partner_2.jpg" alt="partner img 2"/></a></li>
+						<li><a href="#"><img src="./images/Partner_3.jpg" alt="partner img 3"/></a></li>
+						<li><a href="#"><img src="./images/Partner_4.jpg" alt="partner img 4"/></a></li>
+						<li><a href="#"><img src="./images/Partner_5.jpg" alt="partner img 5"/></a></li>
+						<li><a href="#"><img src="./images/Partner_6.jpg" alt="partner img 6"/></a></li>
+						<li><a href="#"><img src="./images/Partner_1.jpg" alt="partner img 1"/></a></li>
+						<li><a href="#"><img src="./images/Partner_2.jpg" alt="partner img 2"/></a></li>
+						<li><a href="#"><img src="./images/Partner_3.jpg" alt="partner img 3"/></a></li>
+						<li><a href="#"><img src="./images/Partner_4.jpg" alt="partner img 4"/></a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="Testimonials_section">
+				<h2 class="content_tt center">And what do others say?</h2>
+				<div class="container testimonial_section_content">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="contents frame tab">
+								<div class="review_contents">
+									<div class="item active">
+										<div class="picture frame inside">
+											<img src="./images/reviewer_01.jpeg" alt="reviewer avatar img 01"/>
+										</div>
+										<div class="desc">
+											<h4>Astrid Jorgensen<span>CEO at Runway inc.</span></h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<div class="picture frame inside">
+											<img src="./images/reviewer_02.jpeg" alt="reviewer avatar img 02"/>
+										</div>
+										<div class="desc">
+											<h4>Vene Zuela<span>CEO at Runway inc.</span></h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<div class="picture frame inside">
+											<img src="./images/reviewer_03.jpeg" alt="reviewer avatar img 03"/>
+										</div>
+										<div class="desc">
+											<h4>Wouter Donselaar<span>CEO at Runway inc.</span></h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="tablinks">
+									<span class="active">1</span>
+									<span>2</span>
+									<span>3</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="contents accordion">
+								<header class="frame">
+										<h4>title 1</h4>
+								</header>
+								<div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime perferendis voluptatum maiores quos sit unde labore sed ratione ut fugiat veniam, tempora, aliquam, tenetur in vero. Suscipit quod deleniti dolor. Ex quo reiciendis consectetur magnam sed neque aut pariatur, iusto harum impedit. Harum vitae asperiores expedita excepturi deserunt eos aspernatur omnis. In, repudiandae aliquam assumenda. Qui consequatur culpa, praesentium amet dolore dignissimos quam eum! Illum mollitia et maiores unde. Amet!
+									</p>
+								</div>
+							</div>
+							<div class="contents accordion">
+								<header class="frame">
+										<h4>title 2</h4>
+								</header>
+								<div>
+									<p> 
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime perferendis voluptatum maiores quos sit unde labore sed ratione ut fugiat veniam, tempora, aliquam, tenetur in vero. Suscipit quod deleniti dolor. Ex quo reiciendis consectetur magnam sed neque aut pariatur, iusto harum impedit. Harum vitae asperiores expedita excepturi deserunt eos aspernatur omnis. In, repudiandae aliquam assumenda. Qui consequatur culpa, praesentium amet dolore dignissimos quam eum! Illum mollitia et maiores unde. Amet!
+									</p>
+								</div>
+							</div>
+							<div class="contents accordion">
+								<header class="frame">
+										<h4>title 3</h4>
+								</header>
+								<div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime perferendis voluptatum maiores quos sit unde labore sed ratione ut fugiat veniam, tempora, aliquam, tenetur in vero. Suscipit quod deleniti dolor. Ex quo reiciendis consectetur magnam sed neque aut pariatur, iusto harum impedit. Harum vitae asperiores expedita excepturi deserunt eos aspernatur omnis. In, repudiandae aliquam assumenda. Qui consequatur culpa, praesentium amet dolore dignissimos quam eum! Illum mollitia et maiores unde. Amet!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Contact_section frame">
+				<div class="container">
+					<h2 class="content_tt left">Get to know us better</h2>
+					<p class="content_desc left">
+						Contact us, and we will contact you back. Want to chat? We can do that too.
+					</p>
+					<div class="row">
+						<div class="col-md-4 contact-info">
+							<div class="contact_item">
+								<div class="sprite marker">marker</div>
+								<p>
+									623 Fifth Avenue,
+									New York, NY 10022, 
+									USA
+								</p>
+							</div>
+							<div class="contact_item">
+								<div class="sprite envelope">envelope</div>
+								<p>
+									<a href="mailto:randomness@expire.com">randomness@expire.com</a>
+								</p>
+							</div>
+							<div class="contact_item">
+								<div class="sprite phone">phone</div>
+								<p>
+									Phone: +(123) 456 7890<br/>
+									Fax: +(123) 456 7899
+								</p>
+							</div>
+						</div>
+						<div class="col-md-8 contact-form">
+							<form action="" method="post">
+								<div class="row field">
+									<div class="col-md-6">
+										<div class="gradient_line">
+												<label for="username"></label>
+												<input type="text" id="username" name="username" placeholder="Name"/>
+										</div>
+									</div>
+									<div class="col-md-6 gradient_line" >
+										<div class="gradient_line">
+												<label for="useremail"></label>
+												<input type="email" id="useremail" name="useremail" placeholder="Email"/>
+										</div>
+									</div>
+									
+								</div>
+								<div class="field gradient_line">
+									<label for="subject">subject</label>
+									<input type="text" id="subject" name="subject" placeholder="Subject"/>
+								</div>
+								<div class="field gradient_line">
+									<label for="msg">Meassage</label>
+									<textarea name="usermsg" id="msg" cols="30" rows="10" placeholder="Your message"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Google_map"></section>
+		</main>
 		<footer></footer>
 	</body>
 </html>
