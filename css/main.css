@@ -202,6 +202,31 @@ hr {
 	height: 36px;
 	background-position: -68px -202px;
 }
+.facebook {
+	width: 13px;
+	height: 21px;
+	background-position-y: -247px;
+}
+.twitter {
+	width: 30px;
+	height: 21px;
+	background-position: -19px -247px;
+}
+.linkedin {
+	width: 25px;
+	height: 21px;
+	background-position: -53px -247px;
+}
+.googleplus {
+	width: 24px;
+	height: 21px;
+	background-position: -84px -247px;
+}
+.instagram {
+	width: 25px;
+	height: 21px;
+	background-position: -116px -247px;
+}
 /* --------- Header --------- */
 
 body > header {
@@ -222,7 +247,8 @@ body > header nav {
 .main-left-menu {
 	order: 1;
 }
-header h1 {
+header h1,
+footer h1 {
 	order: 2;
 	margin: 0 80px;
 	display: flex;
@@ -271,7 +297,8 @@ header nav ul li a {
 	font-size: 18px;
 	font-weight: 300;
 }
-header h1 a:last-child {
+header h1 a:last-child,
+footer h1 a:last-child {
 	font-family: 'Raleway', sans-serif;
 	font-size: 35px;
 	margin-top: 25px;
@@ -902,4 +929,55 @@ header h1 a:last-child {
 	padding: 20px;
 	box-sizing: border-box;
 	font: 14px/1 'Open Sans', sans-serif;
+}
+.Google_map {
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.Google_map.frame.inside::before {
+	z-index: 1;
+}
+.Google_map iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+footer {
+	padding: 20px 0;
+	background: #303030;
+}
+
+footer .row {
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .social_link {
+	order: 1;
+	display: flex;
+}
+footer .social_link li {
+	margin-right: 40px;
+}
+footer .logo {
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-indent: -9999em;
+	background: url('../images/logo.png') no-repeat;
+}
+
+footer .copyright {
+	order: 3;
+	font-size: 14px;
+	color: #e6e9ed;
+}
+footer h1 > a {
+	width: 100%;
+	text-align: center;
 }

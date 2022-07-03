@@ -16,7 +16,7 @@ nextBtn.click(function () {
 });
 
 $('.Parallax_section').parallax({
-	imageSrc: '../images/paralax_bg.jpg',
+	imageSrc: './images/paralax_bg.jpg',
 	speed: 0.6,
 });
 
@@ -134,3 +134,38 @@ $accrodionHeader.click(function () {
 	$this.addClass('active').next().slideDown();
 });
 $accrodionHeader.eq(0).trigger('click');
+
+// // google map
+
+// function initMap() {
+// 	const Ottav = { lat: 40.8623278, lng: -73.4247448 };
+// 	const map = new google.maps.Map(document.querySelector('#ourmap'), {
+// 		zoom: 16,
+// 		center: Ottav,
+// 	});
+// 	const contentString =
+// 		'<div id="map-content">' +
+// 		'<h2 class="title_bar center">adress</h2>' +
+// 		'<p>623 New York Ave, Huntington, NY 11743, USA<br/>' +
+// 		'Phone:  (123) 45 67 890</br>' +
+// 		'hr.Expirex@gmail.com</p>' +
+// 		'</div>';
+// 	const infowindow = new google.maps.InfoWindow({
+// 		content: contentString,
+// 	});
+// 	const marker = new google.maps.Marker({
+// 		position: Ottav,
+// 		map,
+// 		title: 'Expire',
+// 	});
+
+// 	marker.addListener('click', () => {
+// 		infowindow.open({
+// 			anchor: marker,
+// 			map,
+// 			shouldFocus: false,
+// 		});
+// 	});
+// }
+
+// window.initMap = initMap;
