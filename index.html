@@ -10,21 +10,24 @@
 		<title>Expire</title>
 		<link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+		<script src="https://kit.fontawesome.com/0ec9f69e50.js" crossorigin="anonymous"></script>
 		<script src="./js/parallax.min.js"></script>
 		<script src="./js/mixitup.min.js"></script>
 		
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/reponsive.css"/>
 		<script defer src="./js/main.js"></script>
 	</head>
 	<body>
-		<header>
+		<header class="navbar">
 			<nav>
 				<h1>
 					<a href="./index.html" class="logo">Expire</a>
-					<a href="./index.html">Expire</a>
+					<a href="./index.html" class="logo_text">Expire</a>
 				</h1>
 				<ul class="main-left-menu">
 					<li><a href="">HOME</a></li>
@@ -36,6 +39,12 @@
 					<li><a href="">ABOUT US</a></li>
 					<li><a href="">CONTACT</a></li>
 				</ul>
+					<a href="#" class="hamburger-button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 			</nav>
 		</header>
 		<section class="main_slider">
@@ -75,7 +84,7 @@
 							<span></span>
 						</div>
 						<p>
-							Incredible as this seems to our ordinary ideas, it is an
+							Incredible as this seems to our ordinary<br/> ideas, it is an
 							understatement
 						</p>
 						<p>
@@ -182,7 +191,7 @@
 			<section class="Stats_excerpt_section">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3 item">
+						<div class="col-md-3 col-12 item">
 							<span class="stat_icon sprite user">user icon</span>
 							<div class="item_info">
 								<span class="count" data-number="1000">1000</span>
@@ -190,21 +199,21 @@
 								<h3>Happy users</h3>
 							</div>
 						</div>
-						<div class="col-md-3 item">
+						<div class="col-md-3 col-12 item">
 							<span class="stat_icon sprite cart">user cart</span>
 							<div class="item_info">
 								<span class="count" data-number="200">200</span>
 								<h3>Sold products</h3>
 							</div>
 						</div>
-						<div class="col-md-3 item">
+						<div class="col-md-3 col-12 item">
 							<span class="stat_icon sprite comment">user comment </span>
 							<div class="item_info">
 								<span class="count" data-number="56332">5632</span>
 								<h3>Comments</h3>
 							</div>
 						</div>
-						<div class="col-md-3 item">
+						<div class="col-md-3 col-12 item">
 							<span class="stat_icon sprite file">user file</span>
 							<div class="item_info">
 								<span class="count" data-number="25000">25000</span>
@@ -280,7 +289,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="col-md-4">
+						<li class="col-md-4 ">
 							<div class="content">
 								<header class="post_img frame inside">
 									<img src="./images/blog_post_img3.jpg" alt="blog post img3" />
@@ -308,7 +317,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="col-md-4">
+						<li class="col-md-4 ">
 							<div class="content">
 								<header class="post_img frame inside">
 									<img src="./images/blog_post_img4.jpg" alt="blog post img1" />
@@ -336,7 +345,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="col-md-4">
+						<li class="col-md-4 ">
 							<div class="content">
 								<header class="post_img frame inside">
 									<img src="./images/blog_post_img5.jpg" alt="blog post img2" />
@@ -582,7 +591,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 ">
 							<div class="contents accordion">
 								<header class="frame">
 										<h4>title 1</h4>
@@ -624,7 +633,7 @@
 						Contact us, and we will contact you back. Want to chat? We can do that too.
 					</p>
 					<div class="row">
-						<div class="col-md-4 contact-info">
+						<div class="col-md-4 col-12 contact-info">
 							<div class="contact_item">
 								<div class="sprite marker">marker</div>
 								<p>

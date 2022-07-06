@@ -64,7 +64,7 @@ var blogSlides = $('.latest_blog_list').bxSlider({
 	easing: 'ease-in',
 	controls: false,
 	pager: false,
-	minSlides: 2,
+	minSlides: 1,
 	maxSlides: 3,
 	slideWidth: 370,
 	moveSlides: 1,
@@ -169,3 +169,39 @@ $accrodionHeader.eq(0).trigger('click');
 // }
 
 // window.initMap = initMap;
+
+$('.hamburger-button').on('click', function (event) {
+	event.preventDefault();
+
+	$(this).toggleClass('active');
+	$('.main-left-menu').toggleClass('visible');
+	$('.main-right-menu').toggleClass('visible');
+});
+
+// 네브바 스크롤
+const $navLogo = $('nav h1 .logo');
+const $navText = $('nav h1 .logo_text');
+const toggleBtn = $('.hamburger-botton');
+
+console.log('toggleBtn: ', toggleBtn);
+
+$(window).scroll(function () {
+	if (window.scrollY > 100) {
+		$navText.fadeOut(300, 'easeInOutCubic');
+
+		$('.navbar')
+			.css({ backgroundColor: 'rgba(0, 0, 0, 0.5)' })
+			.stop()
+			.animate({ height: '100px' }, 300, 'easeInOutCubic');
+		$('.main-left-menu').css({ top: '100px' });
+		$('.main-right-menu').css({ top: '190px' });
+	} else {
+		$navText.fadeIn(300, 'easeInOutCubic');
+		$('.navbar')
+			.css({ backgroundColor: 'rgba(0, 0, 0, 0.5)' })
+			.stop()
+			.animate({ height: '170px' }, 300, 'easeInOutCubic');
+		$('.main-left-menu').css({ top: '170px' });
+		$('.main-right-menu').css({ top: '260px' });
+	}
+});
